@@ -1,0 +1,230 @@
+/* change color scheme, make sure everything fits to correct width */
+
+html,
+body {
+  line-height: 1;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+header {
+  margin-top: 0;
+  padding: 15px 15px 15px 0;
+  background: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}  
+
+header h1 {
+  background: lightblue;
+  color: darkgrey;
+  padding: 5px 10px 5px 35px;
+}
+
+header .nav {
+  background: darkgrey;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav .container {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+}
+
+.nav a {
+  padding: 0 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  color: lightblue;
+  border-bottom: 5px solid lightblue;
+  text-decoration: none;
+  margin: 0 10px 5px;
+}
+
+.nav a:hover {
+  color: orange;
+}
+
+.hero {
+  background: darkgrey;
+  background-image: url(../images/hero-background.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  width: 100%;
+}
+
+.hero h1 {
+  background: lightblue;
+  color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5px 5px;
+}
+
+.section {
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.section-about {
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.section-about h2 {
+  text-align: right;
+  color: rgb(41, 41, 80);
+  font-size: 4em;
+  padding-right: 10px;
+  border-right: 5px solid rgb(41, 41, 80);
+}
+
+.section-about p {
+  text-align: left;
+  color: rgb(41, 41, 80);
+  display: inline-block;
+}
+
+.section-about p img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 100px;
+  display: flex;
+}
+
+.portfolio {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -20px;
+}
+
+.section-porfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-portfolio h2 {
+  text-align: right;
+  color: rgb(41, 41, 80);
+  font-size: 4em;
+  padding-right: 10px;
+  border-right: 5px solid rgb(41, 41, 80);
+}
+
+.portfolio-item {
+  display: flex;
+  padding: 0 0 20px 0;
+  max-height: 200px;
+  min-height: 200px;
+  background-size: 150%;
+  text-decoration: none;
+  transition: all 0.25s;
+  align-items: flex-end;
+  flex-basis: calc(50% - 1em);
+  border: 8px solid lightblue;
+}
+
+.portfolio-item:first-child {
+  min-width: 500px;
+  flex-basis: 100%;
+}
+
+.portfolio-item div {
+  padding: 10px 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .portfolio {
+    flex-flow: column nowrap;
+  }
+}
+
+.footer {
+  align-items: center;
+}
+
+.contact-section h2 {
+  text-align: right;
+  color: rgb(41, 41, 80);
+  font-size: 4em;
+  padding-right: 10px;
+  border-right: 5px solid rgb(41, 41, 80);
+}
+
+.footer a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #696969;
+  border-bottom: 5px solid #6699cc;
+  text-decoration: none;
+  margin: 0 10px 5px;
+  display: inline-block;
+}
+
+.footer a:hover {
+  color: lightblue;
+}
+
+.bathroom-finder {
+  background-image: url(../images/bathroom-finder.png)
+}
+
+.code-refactor {
+  background-image: url(../images/code-refactor.png)
+}
+
+.daily-planner {
+  background-image: url(../images/daily-planner.png)
+}
+
+.code-quiz {
+  background-image: url(../images/code-quiz.png)
+}
+
+.project-1 {
+  background-image: url(https://benningenlloyd.com/wp-content/uploads/2017/08/tile-placeholder.jpg)
+}
