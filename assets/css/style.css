@@ -161,6 +161,11 @@ header .nav {
   border: 8px solid lightblue;
 }
 
+.portfolio-item:hover {
+  border: 8px solid darkblue;
+  transition: 0.5s;
+}
+
 .portfolio-item:first-child {
   min-width: 500px;
   flex-basis: 100%;
@@ -168,6 +173,12 @@ header .nav {
 
 .portfolio-item div {
   padding: 10px 10px;
+}
+
+.portfolio-item h3 {
+  color:rgb(41, 41, 80);
+  background: white;
+  padding: 10px 10px 10px 10px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -210,21 +221,26 @@ header .nav {
 }
 
 .bathroom-finder {
-  background-image: url(../images/bathroom-finder.png)
+  background-image: url(../images/bathroom-finder.png);
+  background-size: auto;
 }
 
 .code-refactor {
-  background-image: url(../images/code-refactor.png)
+  background-image: url(../images/code-refactor.png);
+  background-size: auto;
 }
 
 .daily-planner {
-  background-image: url(../images/daily-planner.png)
+  background-image: url(../images/daily-planner.png);
+  background-size: auto;
 }
 
 .code-quiz {
-  background-image: url(../images/code-quiz.png)
+  background-image: url(../images/code-quiz.png);
+  background-size: auto;
 }
 
 .project-1 {
-  background-image: url(https://benningenlloyd.com/wp-content/uploads/2017/08/tile-placeholder.jpg)
+  background-image: url(https://benningenlloyd.com/wp-content/uploads/2017/08/tile-placeholder.jpg);
+  background-size: auto;
 }
